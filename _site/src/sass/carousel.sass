@@ -1,0 +1,77 @@
+.carousel
+  margin-top: $vertical-align*2
+  @include element(container)
+    position: relative
+    width: 100%
+
+  @include element(controls)
+    display: block
+    width: 4rem
+    height: 4rem
+    background-color: $white
+    position: absolute
+    z-index: 1
+    button
+      color: $orange
+      font-size: $base-font-size *1.1
+      //text-align: center
+      padding: 1.4rem
+      //width: 100%
+      //display: block
+
+    @include modifier(prev)
+      bottom: 0
+      left: 0
+
+    @include modifier(next)
+      bottom: 0
+      right: 0
+
+  @include element(slides)
+    position: relative
+    @include element(slide)
+      position: absolute
+      display: none
+      top: 0
+      left: 0
+      margin: 0
+      padding: 0
+      @include modifier(show)
+        position: relative !important
+        display: block
+
+  @include element(indicators)
+    display: block
+    margin: 0 $space * 2
+    @include element(idicator)
+      display: inline-block
+      @include element(nun)
+        font-family: $secondary-font
+        font-size: $base-font-size * 0.8
+        &.active
+          text-decoration: underline
+          color: $orange
+
+
+      @include element(seps)
+        display: inline-block
+        height: 1px
+        width: 0
+        background-color: $grey
+        box-sizing: border-box
+        margin-bottom: $space/ 2
+        &.active
+          width: $space *4
+
+
+  @include element(cature)
+    margin: $space * 2
+
+    @include element(title)
+      padding-bottom: $space
+      font-size: $base-font-size*1.1
+    @include element(description)
+
+
+
+

@@ -1,0 +1,162 @@
+// breadcrumbs
+// -----------------------------------
+
+.breadcrumbs
+  @include element(crumbs)
+    font-family: $secondary-font
+    font-weight: 300
+    font-size: $base-font-size
+    padding: $vertical-align 0 $vertical-align 0
+    box-sizing: border-box
+    @media only screen and (max-width: $break-small)
+      font-size: $base-font-size *0.8
+
+    @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+      font-size: $base-font-size *0.9
+
+
+.profile
+  box-sizing: border-box
+  margin-bottom: $vertical-align
+
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    padding-right: $space*5
+
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    padding-right: $space*2
+
+  @include element(title)
+    padding-bottom: $vertical-align
+    box-sizing: border-box
+
+    @media only screen and (max-width: $break-small)
+      padding-bottom: $vertical-align * 2
+
+    @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+      padding-bottom: $vertical-align * 2
+
+
+  @include element(short-description)
+    padding-bottom: $vertical-align
+    box-sizing: border-box
+    @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+      padding-bottom: $vertical-align * 2
+
+  @include element(separator-line)
+    max-width: 5%
+    border-color: $orange
+    margin-bottom: $vertical-align
+    @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+      margin-bottom: $vertical-align * 4
+
+
+.article
+  @include element(button)
+    border-color: $grey
+    margin-top: $vertical-align
+    text-transform: uppercase
+  @include modifier(padding-right)
+    padding-right: $space * 2 !important
+
+
+
+.info-box
+  width: 9.5rem
+  box-sizing: border-box
+  margin-bottom: $vertical-align
+  margin-left: $space
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    margin-left: 0
+
+
+  @include element(delim)
+    border-color: $orange
+    margin-bottom: $space
+
+
+
+  @include element(info)
+    font-size: $base-font-size * 0.6
+    color: $orange
+
+.article-seats
+  margin-left: $space * 2
+  box-sizing: border-box
+  margin-bottom: $vertical-align
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    padding-right: $space * 4
+    margin-left: 0
+
+  @include element(seat-icon)
+    position: relative
+    height: 2rem
+    hr
+      border-color: $orange
+      position: absolute
+      top: 1.3rem
+      width: 100%
+
+    @include modifier(icon)
+      display: block
+      margin: 0 auto
+      width: 40%
+      height: 2rem
+      background-color: $white
+      z-index: 2
+      position: absolute
+      left: 30%
+      span
+        font-size: 2rem
+        color: $orange
+        margin-left: -50%
+
+
+  @include element(seat-number)
+    display: block
+    text-align: center
+    font-size: 3rem
+  @include element(available)
+    text-align: center
+    font-family: $secondary-font
+    padding-bottom: $vertical-align * 2
+
+  @include element(info)
+    font-size: $base-font-size * 0.6
+
+
+.video
+  margin-top: $vertical-align * 2
+  .video-continer
+    position: relative
+    @include element(video)
+      width: 100%
+      position: relative
+    @include element(button)
+      position: absolute
+      top: 0
+      right: 0
+      button
+        background: $white
+        display: block
+        width: $space * 10
+        height: $space * 10
+        span
+          font-size: $base-font-size * 2
+          color: $orange
+
+  .video-description
+
+    box-sizing: border-box
+    margin-bottom: $vertical-align
+    margin-left: $space
+
+    @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+      margin-left: 0
+      margin-top: $vertical-align
+      padding-left: $space * 2
+
+    @include element(delim)
+      margin-bottom: $space
+
+    @include element(info)
+      font-size: $base-font-size * 0.6

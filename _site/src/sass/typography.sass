@@ -1,0 +1,105 @@
+*:focus
+  outline: none
+
+
+
+body
+  font-family: $main-font
+  font-size: $base-font-size*0.9
+  color: $dark-grey
+  line-height: $base-font-line-height
+  @include margin-normalizer
+
+  //desktop media
+  @media screen and (max-width: $break-small)
+    font-size: $base-font-size*0.8
+
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    font-size: $base-font-size
+
+ul
+  list-style: none
+
+a
+  text-decoration: none
+  color: $grey
+
+button
+  cursor: pointer
+p
+  @include margin-normalizer
+
+h1
+  // normalizer
+  @include margin-normalizer
+  font-family: $secondary-font
+  font-weight: 300
+  font-size: $base-font-size * 3
+  line-height: 1
+  color: $orange
+  //desktop media
+  @media screen and (max-width: $break-small)
+    font-size: $base-font-size * 2.7
+
+
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    font-size: $base-font-size *3.2
+
+
+h3
+  // normalizer
+  @include margin-normalizer
+  font-family: $secondary-font
+  font-weight: 300
+  font-size: $base-font-size * 2.2
+  line-height: 1.2
+  color: $orange
+
+  @media screen and (max-width: $break-small)
+    font-size: $base-font-size * 1.5
+
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    font-size: $base-font-size *1.5
+
+h5
+  // normalizer
+  @include margin-normalizer
+  font-size: $base-font-size * 0.7
+  line-height: 1.4
+  @media screen and (max-width: $break-small)
+    font-size: $base-font-size * 0.9
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    font-size: $base-font-size * 0.9
+
+blockquote
+  @include margin-normalizer
+  padding-bottom: $vertical-align
+  p
+    color: $orange
+    text-indent: $space-off * 3.1
+    font-style: italic
+    &:before
+      font-family: 'icons' !important
+      speak: none
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+      content: "\e906"
+      font-size: $base-font-size * 0.65
+      position: relative
+      bottom: $vertical-align / 2
+      padding-right: $space
+
+  footer
+    color: $grey
+    padding-top: $vertical-align/2
+    font-size: $base-font-size * 0.8
+
+button
+  border-color: transparent
+  padding: $space $space *2
+  background-color: transparent
+
+

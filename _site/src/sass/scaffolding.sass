@@ -1,0 +1,124 @@
+$blocks-class-list: 'container', 'grid' !default
+$class-slug: column !default
+$class-off-set: column-off-set !default
+$class-slug-width: 100%/12 !default
+
+
+
+body
+  &.body--colour
+    background-color: $white
+section
+  clear: both
+  margin-bottom: $vertical-align
+
+img
+  width: 100%
+
+hr
+  @include margin-normalizer
+  border-top: transparent
+  border-left: transparent
+  border-right: transparent
+
+video
+  @include margin-normalizer
+  width: 50%
+  box-sizing: border-box
+
+
+// Container
+// --------------------------
+
+.#{nth($blocks-class-list, 1)}
+  margin: 0 auto
+  padding: 0
+  position: relative
+  width: 85%
+  max-width: 75rem
+  @media only screen and (min-device-width: $break-small)
+    width: 95%
+  @media only screen and (min-device-width: $break-large)
+    width: 80%
+
+// Grid
+// --------------------------
+
+.#{nth($blocks-class-list, 2)}
+  position: relative
+  .row
+    position: relative
+    width: 100%
+    margin: 0
+    padding-top: $vertical-align
+    clear: both
+
+
+
+
+@for $i from 1 through 12
+  .revers-responsive
+    &.#{$class-slug}-#{$i}
+      width: $i * ($class-slug-width) !important
+      margin: 0
+      padding: 0
+      @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+        width: 100% !important
+        margin: 0 !important
+
+  .#{$class-slug}-#{$i}
+    float: left
+    box-sizing: border-box
+    width: 100%
+    margin: 0
+    padding: 0
+    position: relative
+    &.no-resp
+      width:  ($i * $class-slug-width) !important
+      margin: 0
+      padding: 0
+    &.end-poz-mobile
+      float: right
+    @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+      width:  ($i * $class-slug-width)
+      margin: 0
+      padding: 0
+      &.end-poz-mobile
+        float: left
+
+
+  .#{$class-off-set}-#{$i}
+    margin: 0
+    @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+      margin-left: $i * $class-slug-width !important
+
+
+
+// the off-set is not responsive
+
+.#{$class-slug}-fix-offset
+  &.reverse
+    padding-right: 11rem
+    padding-left: 0
+
+  @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
+    position: relative
+    top: 0
+    padding-left: 11rem
+    width: 100%
+    box-sizing: border-box
+
+    &.reverse
+      padding-left: 11rem
+      padding-right: 0
+
+
+
+.#{$class-slug}-fix-width
+  width: 11rem
+  display: block
+  position: absolute
+  top: 0
+  right: 0
+  @media only screen and (min-device-width: $break-small)and (min-width: $break-small)
+    left: 0
