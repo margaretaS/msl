@@ -36,7 +36,7 @@
       left: 0
       margin: 0
       padding: 0
-      @include modifier(show)
+      &.show
         position: relative !important
         display: block
 
@@ -45,6 +45,7 @@
     margin: 0 $space * 2
     @include element(idicator)
       display: inline-block
+      padding: 0.2rem
       @include element(nun)
         font-family: $secondary-font
         font-size: $base-font-size * 0.8
@@ -64,8 +65,11 @@
           width: $space *4
 
 
-  @include element(cature)
+  @include element(capture)
     margin: $space * 2
+    display: none
+    &.show
+      display: block !important
 
     @include element(title)
       padding-bottom: $space

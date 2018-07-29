@@ -928,14 +928,15 @@ nav {
       left: 0;
       margin: 0;
       padding: 0; }
-      .carousel__slides__slide--show {
+      .carousel__slides__slide.show {
         position: relative !important;
         display: block; }
   .carousel__indicators {
     display: block;
     margin: 0 1rem; }
     .carousel__indicators__idicator {
-      display: inline-block; }
+      display: inline-block;
+      padding: 0.2rem; }
       .carousel__indicators__idicator__nun {
         font-family: "Roboto", sans-serif;
         font-size: 0.8rem; }
@@ -951,9 +952,12 @@ nav {
         margin-bottom: 0.25rem; }
         .carousel__indicators__idicator__seps.active {
           width: 2rem; }
-  .carousel__cature {
-    margin: 1rem; }
-    .carousel__cature__title {
+  .carousel__capture {
+    margin: 1rem;
+    display: none; }
+    .carousel__capture.show {
+      display: block !important; }
+    .carousel__capture__title {
       padding-bottom: 0.5rem;
       font-size: 1.1rem; }
 
