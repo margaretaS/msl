@@ -629,11 +629,11 @@ video {
   .column-fix-offset {
     position: relative;
     top: 0;
-    padding-left: 11rem;
+    padding-left: 13rem;
     width: 100%;
     box-sizing: border-box; }
     .column-fix-offset.reverse {
-      padding-left: 11rem;
+      padding-left: 13rem;
       padding-right: 0; } }
 
 .column-fix-width {
