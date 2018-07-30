@@ -1,6 +1,7 @@
 # msl
     
     The solution is addressed to MSL, no other use has been scoped.
+    Author: Margareta Sandor
     
 # Project development considerations
 
