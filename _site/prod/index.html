@@ -13,12 +13,49 @@
 
     <!-- CSS-->
     <link type="text/css" rel="stylesheet" href="css/main.css?v=1.0">
+    <style>
+        .no-script {
+            display: none;
+        }
+    </style>
     <!-- JS Rivets JS-->
     <script type="text/javascript" src="../src/vendors/js/rivets.bundled.min.js"></script>
+    <!-- No Script -->
+    <noscript>
+        <style>
+            .no-script {
+                display: block;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: white;
+                z-index:111;
+            }
+            .message {
+                display: block;
+                margin: 30% auto;
+                width: 17rem;
+                height: 20rem;
+                text-align: center;
+            }
+            h1 {
+                padding-bottom: 3rem;
+            }
+        </style>
+
+    </noscript>
 
 
 </head>
 <body id="profile" class="body--colour">
+
+<div class="no-script">
+    <div class="message">
+        <h1>No-script on</h1>
+        <p>Sorry, the website is not optimised for no-script view just yet. Please enable the browser's JavaScript</p>
+    </div>
+</div>
+
 <!-- Header -->
 <header>
     <nav class="nav--colour">
