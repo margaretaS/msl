@@ -3,7 +3,8 @@ $class-slug: column !default
 $class-off-set: column-off-set !default
 $class-slug-width: 100%/12 !default
 
-
+*:focus
+  outline: none
 
 body
   &.body--colour
@@ -36,8 +37,6 @@ video
   position: relative
   width: 85%
   max-width: 75rem
-  @media only screen and (min-device-width: $break-small)
-    width: 95%
   @media only screen and (min-device-width: $break-large)
     width: 80%
 
@@ -98,7 +97,7 @@ video
 
 .#{$class-slug}-fix-offset
   &.reverse
-    padding-right: 11rem
+    padding-right: 9rem
     padding-left: 0
 
   @media only screen and (min-device-width: $break-small) and (min-width: $break-small)
@@ -115,10 +114,11 @@ video
 
 
 .#{$class-slug}-fix-width
-  width: 11rem
+  width: 9rem
   display: block
   position: absolute
   top: 0
   right: 0
   @media only screen and (min-device-width: $break-small)and (min-width: $break-small)
     left: 0
+    width: 11rem

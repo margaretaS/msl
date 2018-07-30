@@ -40,21 +40,15 @@
 .icon-icon-arrow-left:before {
   content: ""; }
 
-*:focus {
-  outline: none; }
-
 body {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #1c1c1c;
   line-height: 1.4;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0; }
-  @media screen and (max-width: 64rem) {
-    body {
-      font-size: 0.8rem; } }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     body {
       font-size: 1rem; } }
@@ -82,12 +76,9 @@ h1 {
   -webkit-margin-end: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 2.3rem;
   line-height: 1;
   color: #ec703e; }
-  @media screen and (max-width: 64rem) {
-    h1 {
-      font-size: 2.7rem; } }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     h1 {
       font-size: 3.2rem; } }
@@ -99,12 +90,9 @@ h3 {
   -webkit-margin-end: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   color: #ec703e; }
-  @media screen and (max-width: 64rem) {
-    h3 {
-      font-size: 1.5rem; } }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     h3 {
       font-size: 1.5rem; } }
@@ -116,9 +104,6 @@ h5 {
   -webkit-margin-end: 0;
   font-size: 0.7rem;
   line-height: 1.4; }
-  @media screen and (max-width: 64rem) {
-    h5 {
-      font-size: 0.9rem; } }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     h5 {
       font-size: 0.9rem; } }
@@ -156,6 +141,9 @@ button {
   padding: 0.5rem 1rem;
   background-color: transparent; }
 
+*:focus {
+  outline: none; }
+
 body.body--colour {
   background-color: #ffffff; }
 
@@ -189,9 +177,6 @@ video {
   position: relative;
   width: 85%;
   max-width: 75rem; }
-  @media only screen and (min-device-width: 64rem) {
-    .container {
-      width: 95%; } }
   @media only screen and (min-device-width: 100rem) {
     .container {
       width: 80%; } }
@@ -638,7 +623,7 @@ video {
       margin-left: 100% !important; } }
 
 .column-fix-offset.reverse {
-  padding-right: 11rem;
+  padding-right: 9rem;
   padding-left: 0; }
 @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
   .column-fix-offset {
@@ -652,14 +637,15 @@ video {
       padding-right: 0; } }
 
 .column-fix-width {
-  width: 11rem;
+  width: 9rem;
   display: block;
   position: absolute;
   top: 0;
   right: 0; }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     .column-fix-width {
-      left: 0; } }
+      left: 0;
+      width: 11rem; } }
 
 header {
   position: relative;
@@ -760,12 +746,9 @@ nav {
 .breadcrumbs__crumbs {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding: 1rem 0 1rem 0;
   box-sizing: border-box; }
-  @media only screen and (max-width: 64rem) {
-    .breadcrumbs__crumbs {
-      font-size: 0.8rem; } }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     .breadcrumbs__crumbs {
       font-size: 0.9rem; } }
@@ -775,16 +758,10 @@ nav {
   margin-bottom: 1rem; }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     .profile {
-      padding-right: 2.5rem; } }
-  @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
-    .profile {
       padding-right: 1rem; } }
   .profile__title {
     padding-bottom: 1rem;
     box-sizing: border-box; }
-    @media only screen and (max-width: 64rem) {
-      .profile__title {
-        padding-bottom: 2rem; } }
     @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
       .profile__title {
         padding-bottom: 2rem; } }
@@ -810,13 +787,14 @@ nav {
   padding-right: 1rem !important; }
 
 .info-box {
-  width: 9.5rem;
+  width: 8rem;
   box-sizing: border-box;
   margin-bottom: 1rem;
   margin-left: 0.5rem; }
   @media only screen and (min-device-width: 64rem) and (min-width: 64rem) {
     .info-box {
-      margin-left: 0; } }
+      margin-left: 0;
+      width: 9.5rem; } }
   .info-box__delim {
     border-color: #ec703e;
     margin-bottom: 0.5rem; }
